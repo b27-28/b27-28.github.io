@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-123
 <script src="https://telegram.org/js/telegram-web-app.js"></script> <!--Подключаем скрипт от телеграм-->
 <script>
    alert(1);
    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
    tg.expand(); //расширяем на все окно
-   let ss = tg.initDataUnsafe.user.id; //показываем user_id
+   let ss = tg.initDataUnsafe.user.username; //показываем user_id
    alert(ss);
 </script>
 </html>
