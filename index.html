@@ -5,8 +5,7 @@
    alert(1);
    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
    tg.expand(); //расширяем на все окно
-   let ee= Telegram.WebApp.initData;
-   let sdr= ee.hash;
+   let sdr= tg.initData.hash;
    alert(sdr);
    let ss = tg.initDataUnsafe.user.username; 
   // window.location.replace("http://89.178.230.30/?user="+ss+"");
