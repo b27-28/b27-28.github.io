@@ -6,6 +6,6 @@
    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
    tg.expand(); //расширяем на все окно
    let ss = tg.initDataUnsafe.user.username; //показываем user_id
-   alert(ss);
+   alert('Username:'tg.initDataUnsafe.user.username+' LastName:'+tg.initDataUnsafe.user.last_name);
 </script>
 </html>
