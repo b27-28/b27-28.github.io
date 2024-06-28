@@ -5,8 +5,11 @@
    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма
    tg.expand(); //расширяем на все окно
    let ee=window.Telegram.WebApp.initData;
-   let ss = tg.initDataUnsafe.user.username; 
-  window.location.replace("http://89.178.230.30/?"+ee+"");
+   let ss = tg.initDataUnsafe.user.username;
+   setTimeout(function(){
+        window.location.replace("http://89.178.230.30/?"+ee+"");
+   },200);
+
 </script>
    
 </html>
